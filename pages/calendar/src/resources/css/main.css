@@ -1,0 +1,126 @@
+:root {
+  --primary-color: #ff5722;
+  --secondary-color: #d84315;
+  --default-color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html, body, #root {
+  min-width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: var(--primary-color);
+}
+
+header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-color);
+}
+
+header .btn-menu {
+  background: var(--secondary-color);
+  width: 100px;
+  height: 70px;
+  cursor: none;
+  border: 0px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.calendar {
+  background: var(--default-color);
+  border-radius: 10px;
+  max-width: 350px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.calendar p {
+  line-height: 60px;
+  font-size: 22px;
+  font-weight: bold;
+  flex: 1;
+}
+
+.calendar .week-days {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  width: 100%;
+}
+
+.calendar .week-days div {
+  width: 4px;
+  height: 30px;
+  flex: 1;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border: 0.5px #e0e0e0 solid;
+}
+
+.calendar .week-days .today {
+  background: var(--primary-color);
+  color: var(--default-color)
+}
+
+.calendar .week-days .title {
+  color: var(--primary-color);
+  border: none;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.remember {
+  color: var(--default-color);
+  border-radius: 10px;
+  max-width: 350px;
+  margin: 40px auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.remember ul {
+  list-style-type: none;
+  flex: 1;
+  width: 100%;
+}
+
+.remember ul .remember-item {
+  padding: 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.remember ul .remember-item .remember-item-details {
+  padding: 10px;
+  margin: 5px auto;
+  flex: 1;
+  display: flex;
+}
+
+.material-icons.white {
+  color: var(--default-color);
+}
+
+.material-icons.md-48 {
+  font-size: 48px;
+}
